@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#section-header {
+    background-color: rgb(43, 0, 145);
+    width: 100vw;
+    padding: 0px 30px 0px 20px;
+}
+
+#section-header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 20px;
+}
+
+nav ul :hover {
+    color:#f1c40f;
+}
+    
+#video-plein-ecran {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#video-plein-ecran video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#video-plein-ecran h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #0d9494;
+    -webkit-text-stroke: 0.3px white;
+}
+
+#video-plein-ecran button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(0, 0, 105);
+    border-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#video-plein-ecran button:hover {
+    color: #0d9494;
+    background-color: white;
+    border-color: #0d9494;
+    cursor: pointer;
+}
+
+/* STYLE DES SECTIONS */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+    width: 100%; 
+    max-width: 100%; 
+}
+
+/* TITRE DE CHAQUE SECTION */
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* CONTAINER DES CARTES */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espacement entre les cartes */
+    max-width: 90%; /* Limite la largeur des cartes à 90% de la largeur de la section */
+    overflow-x: auto; /* Ajoute un scroll horizontal si nécessaire */
+}
+
+/* STYLE DES CARTES */
+.card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 280px; /* Largeur fixe pour chaque carte */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto; /* Empêche les cartes de se réduire ou de s'étirer */
+}
+
+/* IMAGE DANS LES CARTES */
+.card img {
+    width: 100%; /* L'image prend toute la largeur de la carte */
+    height: auto; /* Maintient le ratio de l'image */
+    border-radius: 5px;
+    object-fit: cover; /* Permet à l'image de couvrir l'espace sans déformation */
+}
+
+/* STYLE DU BOUTON */
+.card button {
+    background-color: rgb(171, 183, 3);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.footer-menu li {
+    margin: 0 20px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-menu a:hover {
+    color: #f1c40f;  /* Gold color on hover */
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.footer-info div {
+    flex: 1;
+    margin: 10px;
+    min-width: 120px;
+}
+
+.footer-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-info p, .footer-info a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+    color: #f1c40f;  
+}
+
+.social-media {
+    margin-bottom: 30px;
+}
+
+.social-media a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 16px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #f1c40f;  /* Gold color on hover */
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: white;
+}
