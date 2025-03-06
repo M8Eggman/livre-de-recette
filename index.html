@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice recette de cuisine</title>
+ <!-- link css -->
+    <link rel="stylesheet" href="./public/assets/css/style.css">
+    <link rel="stylesheet" href="./source/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+<!-- Header -->
+    <header id="Les recettes de mère grand" class="text-white bg-dark d-flex">
+        <img src="https://upload.wikimedia.org/wikipedia/fr/6/63/Grandmere_cafe_logo.png?20200529135934" width="100px" alt="img d'un logo de grand mère buvant un café, la marque étant grand mère avec écris en dessouslsavoir-faire depuis 1954 ">
+        <p class="h1 mb-0 mt-2">Les recettes de Mère-Grand</p>
+    </header>
+
+ <!-- Début nav -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#plat-principaux">Meilleurs plats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#desserts">Meilleurs desserts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#cocktails">Meilleurs cocktails</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Toutes nos recettes
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./public/html/recette.html">Apéritifs</a></li>
+                    <li><a class="dropdown-item" href="./public/html/recette.html">Entrées</a></li>
+                    <li><a class="dropdown-item" href="./public/html/recette.html">Plats</a></li>
+                    <li><a class="dropdown-item" href="./public/html/recette.html">Desserts</a></li>
+                    <li><a class="dropdown-item" href="./public/html/recette.html">Boissons</a></li>
+                </ul>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Séction -->
+<!-- Carousel -->
+    <section>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="./public/html/Chili con carne Vénézuelien.html"><img src="./public/assets/img/48139_w1024h768c1cx2464cy1632.jpg" class="d-block w-100" alt="chili con carne Vénézuelien"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="./public/html/Tiramisu.html"><img src="https://img-3.journaldesfemmes.fr/OBNdssVFDsEQxaURRQbFRcOGyI4=/750x500/6bba299cf8f14665b88a38854630aaf2/ccmcms-jdf/39815248.jpg" class="d-block w-100" alt="une part de tiramisu"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="./public/html/Monaco.html"><img src="https://resize.elle.fr/portrait_480_webp/var/plain_site/storage/images/elle-a-table/recettes-de-cuisine/monaco-2068864/21726352-2-fre-FR/Cocktail-Monaco.jpg" class="d-block w-100" alt="monaco"></a>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+<!-- Carousel -->
+
+    <h2 id="plat-principaux" class="my-3 ms-5">Nos meilleurs plats:</h2>
+    <section class="d-flex flex-wrap justify-content-center gap-2">
+        <div class="card my-1" style="width: 18rem;">
+            <img src="./public/assets/img/48139_w1024h768c1cx2464cy1632.jpg" class="card-img-top" alt="chili con carne Vénézuelien">
+            <div class="card-body">
+                <h5 class="card-title">Chili con carne Vénézuelien</h5>
+                <p class="card-text">Le Chili con carne vénézuélien est un plat épicé à base de viande hachée, haricots rouges, tomates et épices, souvent accompagné de riz ou de pain.</p>
+                <a href="./public/html/Chili con carne Vénézuelien.html" class="btn btn-primary">La recette</a>
+            </div>
+        </div>
+        <div class="card my-1" style="width: 18rem;">
+            <img src="./public/assets/img/46627_w600.jpg" class="card-img-top" alt="civet de Sanglier à la bourguignonne">
+            <div class="card-body">
+                <h5 class="card-title">Civet de Sanglier à la bourguignonne</h5>
+                <p class="card-text">Le Civet de sanglier à la bourguignonne est un ragoût de sanglier mijoté dans du vin rouge, des légumes et des herbes aromatiques.</p>
+                <a href="./public/html/Civet de Sanglier à la bourguignonne.html" class="btn btn-primary">La recette</a>
+            </div>
+        </div>
+        <div class="card my-1" style="width: 18rem;">
+            <img src="https://assets.afcdn.com/recipe/20160401/38946_w600.jpg" class="card-img-top" alt="tartiflette">
+            <div class="card-body">
+                <h5 class="card-title">Tartiflette</h5>
+                <p class="card-text">La tartiflette est un gratin savoyard à base de pommes de terre, de lardons, d'oignons et de fromage reblochon fondant.</p>
+                <a href="./public/html/Tartiflette.html" class="btn btn-primary">La recette</a>
+            </div>
+        </div>
+    </section>
+    <h2 id="desserts" class="my-3 ms-5">Nos meilleurs desserts:</h2>
+    <section class="d-flex flex-wrap justify-content-center gap-2">
+        <div class="card my-1" style="width: 18rem;">
+            <img src="https://img-3.journaldesfemmes.fr/OBNdssVFDsEQxaURRQbFRcOGyI4=/750x500/6bba299cf8f14665b88a38854630aaf2/ccmcms-jdf/39815248.jpg" class="card-img-top" alt="une part de tiramisu">
+            <div class="card-body">
+                <h5 class="card-title">Tiramisu</h5>
+                <p class="card-text">Le tiramisu est un dessert italien composé de couches de biscuits imbibés de café, de mascarpone, de cacao et de chocolat.</p>
+                <a href="./public/html/Tiramisu.html" class="btn btn-primary">La recette</a>
+            </div>
+        </div>
+        <div class="card my-1" style="width: 18rem;">
+            <img src="https://www.condifa.fr/wp-content/uploads/ECLAIRS_CHOCOLAT_CAFE_CARRE.jpg" class="card-img-top" alt="troix éclairs aux chocolat">
+            <div class="card-body">
+                <h5 class="card-title">Eclair au chocolat</h5>
+                <p class="card-text">L'éclair au chocolat est une pâtisserie française composée de pâte à choux garnie de crème pâtissière au chocolat et recouverte d'un glaçage au chocolat.</p>
+                <a href="./public/html/Eclair au chocolat.html" class="btn btn-primary">La recette</a>
+            </div>
+        </div>
+        <div class="card my-1" style="width: 18rem;">
+            <img src="https://assets.afcdn.com/recipe/20161114/26634_w314h314c1cx2736cy1824.webp" class="card-img-top" alt="plusieurs brownie sur une feuille de cuisson ">
+            <div class="card-body">
+                <h5 class="card-title">Brownie</h5>
+                <p class="card-text">Le brownie est un gâteau moelleux et fondant au chocolat, souvent garni de noix ou de pépites de chocolat.</p>
+                <a href="./public/html/Brownie.html" class="btn btn-primary">La recette</a>
+            </div>
+        </div>
+    </section>
+    <h2 id="cocktails" class="my-3 ms-5">Nos meilleurs cocktails:</h2>
+    <section class="d-flex flex-wrap justify-content-center gap-2">
+        <div class="card my-1" style="width: 18rem;">
+            <img src="https://resize.elle.fr/portrait_480_webp/var/plain_site/storage/images/elle-a-table/recettes-de-cuisine/monaco-2068864/21726352-2-fre-FR/Cocktail-Monaco.jpg" class="card-img-top" alt="monaco">
+            <div class="card-body">
+                <h5 class="card-title">Monaco</h5>
+                <p class="card-text">Le Monaco est un cocktail rafraîchissant à base de bière, de limonade et d'une touche de grenadine.</p>
+                <a href="./public/html/Monaco.html" class="btn btn-primary">La recette</a>
+            </div>
+        </div>
+        <div class="card my-1" style="width: 18rem;">
+            <img src="https://resize.elle.fr/portrait_480_webp/var/plain_site/storage/images/elle-a-table/recettes-de-cuisine/margarita-2037408/9397186-12-fre-FR/Margarita.jpg" class="card-img-top" alt="margarita">
+            <div class="card-body">
+                <h5 class="card-title">Margarita</h5>
+                <p class="card-text">La Margarita est un cocktail à base de tequila, de liqueur d'orange (comme le Cointreau), et de jus de lime, généralement servi avec du sel sur le bord du verre.</p>
+                <a href="./public/html/Margarita.html class="btn btn-primary">La recette</a>
+            </div>
+        </div>
+        <div class="card my-1" style="width: 18rem;">
+            <img src="https://resize.elle.fr/portrait_480_webp/var/plain_site/storage/images/elle-a-table/recettes-de-cuisine/blue-lagoon-2070466/21781812-2-fre-FR/Cocktail-blue-lagoon.jpg" class="card-img-top" alt="blue lagoon">
+            <div class="card-body">
+                <h5 class="card-title">Blue lagoon</h5>
+                <p class="card-text">Le Blue Lagoon est un cocktail vibrant à base de vodka, de curaçao bleu, de limonade et de jus de citron, créant une boisson rafraîchissante et colorée.</p>
+                <a href="./public/html/Blue lagoon.html" class="btn btn-primary">La recette</a>
+            </div>
+        </div>
+    </section>
+
+<!-- Footer -->
+    <footer>
+        <div class="d-flex flex-wrap justify-content-around mt-3 bg-light pt-3">
+            <div>
+                <h5>Suivez-nous</h5>
+                <ul>
+                    <li><a href="https://www.facebook.com">Facebook</a></li>
+                    <li><a href="https://www.instagram.com">Instagram</a></li>
+                    <li><a href="https://www.x.com">X</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Contactez-nous</h5>
+                <p>Recette de Grand-Mère</p>
+                <p>Rue de la Cuisine, 1080 Molenbeek</p>
+                <p>Belgique</p>
+                <p>Email: <a href="">Email@outlook.be</a></p>
+            </div>
+            <div>
+                <h5>Nos meilleurs </h5>
+                <ul>
+                    <li><a href="./public/html/plats.html">Plats</a></li>
+                    <li><a href="./public/html/desserts.html">Desserts</a></li>
+                    <li><a href="./public/html/cocktails.html">Cocktails</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-white bg-dark mb-0">Ce site est protegé par les lois des copyright depuis 2025</p>
+    </footer>
+
+<!-- link bootstrap -->
+    <script src="./source/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./source/node_modules/@popperjs/core/dist/umd/popper.js"></script>
+</body>
+</html>
