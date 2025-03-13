@@ -12,7 +12,9 @@ toutLesCards.forEach(card => {
             nouveauBouton.textContent = 'Détruire la card'
             nouveauBouton.classList.add('btn', 'btn-primary')
             nouveauBouton.style.backgroundColor = 'red'
-            card.appendChild(nouveauBouton)  
+            //selectionne la div dans la div pour pouvoir mettre le bouton a coté du premier et pas en dessous
+            let divCard = card.querySelector('div')
+            divCard.appendChild(nouveauBouton)  
             nouveauBouton.addEventListener('click', () => {
                 card.remove()
             })
@@ -52,6 +54,7 @@ boutonNewsletter.textContent = "Newsletter"
 divContact.appendChild(boutonNewsletter)
 //recupere ce qu'il ya ecrit dans input et affiche une alert 
 boutonNewsletter.addEventListener('click', () => {
+    //verifie que linput nest pas vide puis le vide
     if (emailInput.value.length > 0) {
         alert("l'email "+emailInput.value+" à bien été ajouter a la newsletter")
         emailInput.value = ''
