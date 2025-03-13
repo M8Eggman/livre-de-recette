@@ -50,3 +50,7 @@ divContact.appendChild(emailInput)
 let boutonNewsletter = document.createElement('button')
 boutonNewsletter.textContent = "Newsletter"
 divContact.appendChild(boutonNewsletter)
+
+boutonNewsletter.addEventListener('click', () => {
+    alert("l'email "+emailInput.value+" à bien été ajouter a la newsletter")
+})
