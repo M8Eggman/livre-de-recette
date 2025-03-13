@@ -1,7 +1,13 @@
 let toutLesCards = document.querySelectorAll('.card')
 toutLesCards.forEach(card => {
+
     card.addEventListener('click', () => {
         card.style.boxShadow = '5px 5px 10px gray'
+        nouveauBouton = document.createElement('a')
+        nouveauBouton.textContent = 'Détruire la card'
+        nouveauBouton.classList.add('btn', 'btn-primary')
+        nouveauBouton.style.backgroundColor = 'red'
+        card.appendChild(nouveauBouton)  
     })
     card.addEventListener('mouseover', () => {
         card.style.backgroundColor = 'gray'
