@@ -1,6 +1,5 @@
 let toutLesCards = document.querySelectorAll('.card')
 toutLesCards.forEach(card => {
-
     card.addEventListener('click', () => {
         card.style.boxShadow = '5px 5px 10px gray'
         let nouveauBouton = ''
@@ -27,7 +26,6 @@ toutLesCards.forEach(card => {
 })
 let section1 = document.querySelectorAll('section')[1]
 let boutonDePlat = section1.querySelectorAll('.btn')
-console.log(boutonDePlat)
 boutonDePlat[0].addEventListener('click', () => {
     window.location.href="./public/html/Chili con carne Vénézuelien.html"
 })
@@ -37,3 +35,9 @@ boutonDePlat[1].addEventListener('click', () => {
 boutonDePlat[2].addEventListener('click', () => {
     window.location.href="./public/html/Tartiflette.html"
 })
+let footer = document.querySelector('footer')
+let div = footer.querySelector('div')
+let divContact = div.querySelectorAll('div')[1]
+let emailInput = document.createElement('input')
+emailInput.placeholder = 'Entrez votre email'
+divContact.appendChild(emailInput)
