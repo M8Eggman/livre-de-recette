@@ -50,7 +50,12 @@ divContact.appendChild(emailInput)
 let boutonNewsletter = document.createElement('button')
 boutonNewsletter.textContent = "Newsletter"
 divContact.appendChild(boutonNewsletter)
-
+//recupere ce qu'il ya ecrit dans input et affiche une alert 
 boutonNewsletter.addEventListener('click', () => {
-    alert("l'email "+emailInput.value+" à bien été ajouter a la newsletter")
+    if (emailInput.value.length > 0) {
+        alert("l'email "+emailInput.value+" à bien été ajouter a la newsletter")
+        emailInput.value = ''
+    } else {
+        alert("Vous n'avez pas entrez de mail")
+    }
 })
