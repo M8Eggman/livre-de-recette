@@ -3,11 +3,20 @@ toutLesCards.forEach(card => {
 
     card.addEventListener('click', () => {
         card.style.boxShadow = '5px 5px 10px gray'
-        nouveauBouton = document.createElement('a')
-        nouveauBouton.textContent = 'Détruire la card'
-        nouveauBouton.classList.add('btn', 'btn-primary')
-        nouveauBouton.style.backgroundColor = 'red'
-        card.appendChild(nouveauBouton)  
+        let nouveauBouton = ''
+        if (card.classList.contains('destruction')) {
+
+        }else {
+            card.classList.add('destruction')
+            nouveauBouton = document.createElement('a')
+            nouveauBouton.textContent = 'Détruire la card'
+            nouveauBouton.classList.add('btn', 'btn-primary')
+            nouveauBouton.style.backgroundColor = 'red'
+            card.appendChild(nouveauBouton)  
+            nouveauBouton.addEventListener('click', () => {
+                card.remove()
+            })
+        }
     })
     card.addEventListener('mouseover', () => {
         card.style.backgroundColor = 'gray'
