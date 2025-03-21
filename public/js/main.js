@@ -22,6 +22,7 @@ toutLesCards.forEach(card => {
     })
     card.addEventListener('mouseover', () => {
         card.style.backgroundColor = 'gray'
+        card.style.transition = '500ms'
     })
     card.addEventListener('mouseout', () => {
         card.style.backgroundColor ='white'
